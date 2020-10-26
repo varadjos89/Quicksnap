@@ -55,6 +55,8 @@ QuickSnap is a marketplace for local services. It helps customers hire trusted p
 
 ![image](https://user-images.githubusercontent.com/48415852/97133458-87d1d480-1720-11eb-9b9d-9aee8fa9a26c.png)
 
+![image](https://user-images.githubusercontent.com/48415852/97133965-0b3ff580-1722-11eb-8d1d-6c7f3e7a5a12.png)
+
 ![image](https://user-images.githubusercontent.com/48415852/97133536-c6678f00-1720-11eb-9acf-b401ee3deadc.png)
 
 ![image](https://user-images.githubusercontent.com/48415852/97133599-f1ea7980-1720-11eb-988e-a7852953aaa7.png)
@@ -62,8 +64,5 @@ QuickSnap is a marketplace for local services. It helps customers hire trusted p
 ![image](https://user-images.githubusercontent.com/48415852/97133743-60c7d280-1721-11eb-9d66-b060170fab37.png)
 
 ![image](https://user-images.githubusercontent.com/48415852/97133828-9b316f80-1721-11eb-8a8c-975b7d674715.png)
-
-
-![image](https://user-images.githubusercontent.com/48415852/97132715-23ae1100-171e-11eb-9826-218f08d4e13f.png)
 
 
