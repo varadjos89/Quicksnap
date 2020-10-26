@@ -1,0 +1,229 @@
+<app-user-header></app-user-header>
+
+<div class="row col-lg-12">
+  <div class="col-lg-4">
+    <h4>Choose Location :</h4>
+    <select [(ngModel)]="SearchInCity" class="form-control">
+      <option>Boston</option>
+      <option>New Jersey</option>
+      <option>New York</option>
+      <option>Las Vegas</option>
+      <option>Colorado</option>
+      <option>Orlando</option>
+      <option>Chicago</option>
+    </select>
+
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row col-lg-12">
+    <section class="services">
+
+      <div class="service-title"> Repairs</div>
+
+      <div class="services__center">
+        <div class="services__single-service">
+          <p class="services__single-service-text">
+            <br><img src="./../../assets/img/electricians.PNG" width="300px" height="200px"> <br><i>Electricians</i>
+          </p>
+          <br>
+          <button #Electrician name="Electrician"
+            (click)="routeToServiceproviderList(Electrician.getAttribute('name'))"
+            routerLinkActive="router-link-active" class="btn btn-primary">
+            View List</button>
+        </div>
+
+        <br>
+
+        <div class="services__single-service">
+          <p class="services__single-service-text">
+            <br>
+
+            <img src="./../../assets/img/carpenters.PNG" width="300px" height="200px"> <br>
+
+            <i>Carpenters</i>
+          </p>
+          <br>
+          <button class="btn-list-carpenters" #Carpenter name="Carpenter"
+            (click)="routeToServiceproviderList(Carpenter.getAttribute('name'))" class="btn btn-primary"> View List</button>
+        </div>
+        <div class="services__single-service">
+
+          <p class="services__single-service-text">
+            <br>
+
+            <img src="./../../assets/img/plumbers.PNG" width="300px" height="200px"> <br>
+
+            <i>Plumber</i>
+          </p>
+          <br>
+          <button #Plumber name="Plumber"
+            (click)="routeToServiceproviderList(Plumber.getAttribute('name'))" class="btn btn-primary"> View List</button>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="service-title"> Painting and Renovation</div>
+      <div class="services__center">
+        <div class="services__single-service">
+          <p class="services__single-service-text">
+            <br>
+            <img src="./../../assets/img/kitchenRenovation.PNG" width="300px" height="200px"> <br>
+            <i>Kitchen Renovation</i>
+          </p>
+          <br>
+          <button class="btn-list-kitchenRenovators" #Kitchen name="Kitchen Renovation"
+            (click)="routeToServiceproviderList(Kitchen.getAttribute('name'))" class="btn btn-primary"> View List</button>
+        </div>
+        <br>
+        <div class="services__single-service">
+          <div class="services__single-service-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <p class="services__single-service-text">
+            <br>
+            <img src="./../../assets/img/interiors.PNG" width="300px" height="200px"> <br>
+
+            <i>Interiors</i>
+          </p>
+          <br>
+          <button #Interiors name="Interiors"
+            (click)="routeToServiceproviderList(Interiors.getAttribute('name'))" class="btn btn-primary"> View List</button>
+        </div>
+        <div class="services__single-service">
+
+
+
+          <p class="services__single-service-text">
+            <br>
+
+            <img src="./../../assets/img/furniturework.PNG" width="300px" height="200px"> <br>
+
+            <i>Furniture Works</i>
+          </p>
+          <br>
+          <button #Furniture name="Furniture  Works"
+            (click)="routeToServiceproviderList(Furniture.getAttribute('name'))" class="btn btn-primary"> View List </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="services">
+      <div class="service-title">Wedding Services</div>
+
+      <div class="services__center">
+
+        <div class="services__single-service">
+
+          <div class="services__single-service-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <p class="services__single-service-text">
+            <br>
+
+            <img src="./../../assets/img/weddingPhotographers.PNG" width="300px" height="200px"> <br>
+
+            <i>Wedding Photographers</i>
+          </p>
+          <br>
+          <button #Wedding name="Wedding Photographers"
+            (click)="routeToServiceproviderList(Wedding.getAttribute('name'))" class="btn btn-primary">View List</button>
+
+        </div>
+
+        <br>
+
+        <div class="services__single-service">
+
+          <div class="services__single-service-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <p class="services__single-service-text">
+            <br>
+
+            <img src="./../../assets/img/bridalMakeup.PNG" width="300px" height="200px"> <br>
+
+            <i>Bridal Makeup</i>
+          </p>
+          <br>
+          <button #Bridal name="Bridal Makeup"
+            (click)="routeToServiceproviderList(Bridal.getAttribute('name'))" class="btn btn-primary"> View List</button>
+        </div>
+        <div class="services__single-service">
+
+
+          <p class="services__single-service-text">
+            <br>
+
+            <img src="./../../assets/img/event.PNG" width="300px" height="200px"> <br>
+
+            <i>Event Organisers</i>
+          </p>
+          <br>
+          <button #Event name="Event Organisers"
+            (click)="routeToServiceproviderList(Event.getAttribute('name'))" class="btn btn-primary"> View List</button>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- <section class="reviews"> -->
+
+    <div class="customerReviews">
+      CUSTOMER REVIEWS
+    </div>
+    <section class="services">
+
+      <div class="services__center">
+
+        <article class="services__single-service">
+
+          <p class="customerName"><i>Sonia</i></p> <br>
+          <p class="services__single-service-text">
+            <i>Hygenie services by Quick Snap <br>
+              Super Impressed !<br>
+              Snap Snap </i>
+          </p>
+
+        </article>
+
+        <article class="services__single-service">
+          <p class="customerName"><i>Punkaj</i></p> <br>
+          <p class="services__single-service-text">
+            <i>Great Service! Works on a <br>
+              Very systematic process and consists of <br>
+              good technicians</i>
+          </p>
+        </article>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+<div class="footers">
+  <div class="ad1">
+    <img src="./../../assets/img/Logo.PNG" width="280px" height="70px">
+    <p class="aa">Copyright c 2019 QuickSnap</p>
+    <a class="an" href="#">Terms of Use</a>
+    <a class="anb" href="#">About Us</a>
+    <a class="anc" href="#">Privacy Policy</a>
+  </div>
+</div>
+<!-- <button class="btn btn-primary" (click)="routeToContactUs()" routerLinkActive="router-link-active"
+  class="btn btn-success">contact us</button> -->

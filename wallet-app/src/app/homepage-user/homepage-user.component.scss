@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i");
+body{
+  background-image: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.navbar {
+  background-color: black;
+  opacity:0.7;
+}
+.nav__links {
+  flex: 1 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+.nav__child_link {
+  background: transparent;
+  color: white;
+  flex: 1 0 100px;
+}
+.marginTop{
+  margin-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav__child_link:hover {
+    padding-left: 1rem;
+    color: grey;
+  }
+}
+
+// End of nav bar
+// Start of image
+.screenimage {
+  padding: 2rem 0;
+  background: var(--SectionWhite);
+}
+
+@media screen and (min-width: 992px) {
+  .image__center {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// Start of categories
+
+.services__center {
+  margin: 2rem auto;
+}
+i{
+  font-weight: bold;
+  font-size:16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.services__single-service {
+  margin: 1rem auto;
+  padding: 1rem 0;
+  transition: all 0.5s ease-in;
+  text-align: center;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 900;
+}
+.services__single-service:hover {
+  box-shadow: 10px 10px 15px 20px white;
+}
+
+.services__single-service-text {
+  width: 100%;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .services__center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services__single-service {
+    flex: 0 0 calc(33.3333% - 0.25rem);
+  }
+}
+// Reviews Section
+
+.reviews {
+  padding: 1rem 0;
+}
+.customerReviews {
+  margin: 36px 0 50px;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+}
+
+.customerName {
+  font-size: 220%;
+}
+
+// Footer section
+
+@mixin style {
+  .ad1 {
+    background-color: black;
+  }
+  .ad2 {
+    background-color: grey;
+  }
+}
+
+@mixin demo {
+  background-color: black;
+}
+@mixin demo1 {
+  background-color: grey;
+}
+
+.footers {
+  height: 70px;
+  position: relative;
+}
+.ad1 {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+
+  @include demo;
+}
+// Here the logos are styled
+.ad2 {
+  @include demo1;
+  height: 190px;
+}
+//Here terms of use is styled
+.logos {
+  top: 13px;
+  color: white;
+  position: absolute;
+}
+//Here terms of use is placed
+.an {
+  @extend .logos;
+  left: 1000px;
+  top: 30px;
+}
+//Here about us is placed
+.anb {
+  @extend .logos;
+  left: 1120px;
+  top: 30px;
+}
+.aa {
+  @extend .logos;
+  left: 350px;
+  top: 30px;
+}
+//Here privacy policy is placed
+.anc {
+  @extend .logos;
+  left: 1200px;
+  top: 30px;
+}
+//Here cookies is placed
+.and {
+  @extend .logos;
+  left: 725px;
+}
+//Here accesibility is placed
+.ane {
+  @extend .logos;
+  left: 800px;
+}
+//Here advertise with us is placed
+.anf {
+  @extend .logos;
+  left: 920px;
+}
+//Here the copyright is written
+
+.whitee {
+  color: white;
+  position: absolute;
+  left: 340px;
+  width: 1000px;
+  top: 45px;
+}

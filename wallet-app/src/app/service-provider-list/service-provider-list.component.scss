@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+
+.service-list{
+margin: 0 auto;
+width: 80%;
+background-color: orange;
+height: auto;
+
+}
+.service-box{
+  margin: 0 auto;
+  width: 90%;
+  background-color: white;
+border: 5px solid orange;
+  padding :20px;
+  position: relative;
+  }
+
+  .service-box div{
+    font-weight: 9  00;
+    display: block;
+  }
+  .service-box button{
+    float: right;
+    height: 40px;
+    width: 150px;
+    background-color: orange;
+    // font-size: 20px;
+    font-weight: 400;
+
+  }
+  .serviceman-name{
+    font-weight: 900;
+    font-size: 24px;
+    color: orange;
+  }
+// the form frame styles
+
+// box inside the frame
+.outerbox{
+  width : 300px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  background-color: orange;
+  border-radius: 15px;
+  z-index: 20;
+  position:absolute;
+  top:200px;
+  left:600px;
+  box-shadow: 5px 10px #888888;
+  border: 5px solid grey;
+
+}
+// styling the form heading
+h2{
+  margin : 0 auto;
+}
+h1{
+  text-align: center;
+  padding:5px;
+}
+.outerbox div{
+  margin: 5px;
+}
+.outerbox input{
+  margin: 5px;
+  // overflow: scroll;
+}
+.outerbox label{
+  margin: 5px;
+}
+.outerbox button{
+margin: 0 auto;
+margin-left: 80px;
+background-color: white;
+color: orange;
+font-weight: 400;
+width: 130px;
+}
+
+
+
+.navbar{
+background-color:black;
+}
+.nav__links{
+
+
+  flex:1 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+.nav__child_link{
+  background: transparent;
+  color:white;
+  flex:1 0 100px;
+}
+
+@media screen and (min-width:768px){
+  .navbar{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ .nav__child_link:hover{
+    padding-left: 1rem;
+    color: grey;
+  }
+
+}
+
+// End of nav bar
+// Start of image
+.screenimage{
+ padding: 2rem 0;
+ background: var(--SectionWhite);
+}
+
+@media screen and (min-width:992px){
+.image__center{
+ display: flex;
+ justify-content: space-between;
+}
+}
+
+
+// Start of categories
+
+ .services__center{
+//   width: 140vw;
+  background: linear-gradient(orange,orange);
+  margin: 2rem auto;
+
+ }
+ .services__single-service{
+  margin: 1rem auto;
+  padding: 1rem 0;
+  transition: all 0.5s ease-in;
+  text-align: center;
+  height: 100px;
+
+ }
+
+
+.service-title{
+ text-align: center;
+
+ font-size: 23px;
+ font-weight: 900;
+
+}
+.services__single-service:hover{
+
+  box-shadow: 10px 10px 15px 20px white;
+ }
+
+.services__single-service-text{
+  width: 100%;
+  line-height: 1.5;
+
+}
+
+
+@media screen and (min-width:768px){
+ .services__center{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+ }
+
+}
+
+@media screen and (min-width:992px){
+.services__single-service{
+ flex:0 0 calc(33.3333% - 0.25rem);
+}
+
+}
+// Reviews Section
+
+.reviews{
+  padding: 1rem 0;
+
+}
+.customerReviews{
+  margin: 36px 0 50px;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+ }
+
+
+ .customerName
+ {
+   font-size: 220%;
+ }
+
+
+// Footer section
+
+@mixin style {
+  .ad1{
+     background-color: black;
+
+      }
+  .ad2 {
+     background-color: grey;
+   }
+  }
+
+@mixin demo {
+   background-color: black;
+}
+@mixin demo1 {
+   background-color: grey;
+}
+
+
+.footers{
+
+   height:70px;
+   position:relative;
+   }
+.ad1
+{
+   position:absolute;
+height:70px;
+width:100%;
+
+@include demo ;
+
+
+}
+// Here the logos are styled
+.ad2
+{
+   @include demo1 ;
+height:190px;
+
+
+
+}
+//Here terms of use is styled
+.logos{
+   top:13px;
+   color:white;
+   position:absolute;
+}
+//Here terms of use is placed
+.an
+{
+ @extend .logos;
+  left:1000px;
+  top:30px;
+
+}
+//Here about us is placed
+.anb
+{
+   @extend .logos;
+  left:1120px;
+  top:30px;
+
+}
+.aa{
+  @extend .logos;
+  left:350px;
+  top:30px;
+}
+//Here privacy policy is placed
+.anc
+{
+   @extend .logos;
+  left:1200px;
+  top:30px;
+
+}
+//Here cookies is placed
+.and
+{
+   @extend .logos;
+   left:725px;
+
+}
+//Here accesibility is placed
+.ane
+{
+   @extend .logos;
+  left:800px;
+
+}
+//Here advertise with us is placed
+.anf
+{
+   @extend .logos;
+ left:920px;
+
+}
+//Here the copyright is written
+
+.whitee
+{
+   color:white;
+   position:absolute;
+  left:340px;
+  width:1000px;
+  top:45px;
+}
+// Here image for logos is placed
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+
+.navbar{
+background-color:black;
+}
+.nav__links{
+
+  flex:1 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+.nav__child_link{
+  background: transparent;
+  color:white;
+  flex:1 0 100px;
+}
+
+@media screen and (min-width:768px){
+  .navbar{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ .nav__child_link:hover{
+    padding-left: 1rem;
+    color: grey;
+  }
+
+}
+
+// End of nav bar
+// Start of image
+.screenimage{
+ padding: 2rem 0;
+ background: var(--SectionWhite);
+}
+
+@media screen and (min-width:992px){
+.image__center{
+ display: flex;
+ justify-content: space-between;
+}
+}
+
+
+// Start of categories
+
+ .services__center{
+  max-width: 90vw;
+  background: linear-gradient(orange,orange);
+  margin: 2rem auto;
+
+ }
+ .services__single-service{
+  margin: 1rem auto;
+  padding: 1rem 0;
+  transition: all 0.5s ease-in;
+  text-align: center;
+
+ }
+
+.service-title{
+ text-align: center;
+
+ font-size: 23px;
+ font-weight: 900;
+
+}
+.services__single-service:hover{
+
+  box-shadow: 10px 10px 15px 20px white;
+ }
+
+.services__single-service-text{
+ width: 100%;
+  line-height: 1.5;
+}
+
+
+@media screen and (min-width:768px){
+ .services__center{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+ }
+
+}
+
+@media screen and (min-width:992px){
+.services__single-service{
+ flex:0 0 calc(33.3333% - 0.25rem);
+}
+
+}
+// Reviews Section
+
+.reviews{
+  padding: 1rem 0;
+
+}
+.customerReviews{
+  margin: 36px 0 50px;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+ }
+
+
+ .customerName
+ {
+   font-size: 220%;
+ }
+
+
+// Footer section
+
+@mixin style {
+  .ad1{
+     background-color: black;
+
+      }
+  .ad2 {
+     background-color: grey;
+   }
+  }
+
+@mixin demo {
+   background-color: black;
+}
+@mixin demo1 {
+   background-color: grey;
+}
+
+
+.footers{
+
+   height:70px;
+   position:relative;
+   }
+.ad1
+{
+   position:absolute;
+height:70px;
+width:100%;
+
+@include demo ;
+
+
+}
+// Here the logos are styled
+.ad2
+{
+   @include demo1 ;
+height:190px;
+
+}
+//Here terms of use is styled
+.logos{
+   top:13px;
+   color:white;
+   position:absolute;
+}
+//Here terms of use is placed
+.an
+{
+ @extend .logos;
+  left:1000px;
+  top:30px;
+
+}
+//Here about us is placed
+.anb
+{
+   @extend .logos;
+  left:1120px;
+  top:30px;
+
+}
+.aa{
+  @extend .logos;
+  left:350px;
+  top:30px;
+}
+//Here privacy policy is placed
+.anc
+{
+   @extend .logos;
+  left:1200px;
+  top:30px;
+
+}
+//Here cookies is placed
+.and
+{
+   @extend .logos;
+   left:725px;
+
+}
+//Here accesibility is placed
+.ane
+{
+   @extend .logos;
+  left:800px;
+
+}
+//Here advertise with us is placed
+.anf
+{
+   @extend .logos;
+ left:920px;
+
+}
+//Here the copyright is written
+
+.whitee
+{
+   color:white;
+   position:absolute;
+  left:340px;
+  width:1000px;
+  top:45px;
+}
+
+
+// the fosend request for m styles are listed below 
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+
+
+
+
+
+
+
+
+
+
+
+

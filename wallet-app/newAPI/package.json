@@ -1,0 +1,26 @@
+{
+  "name": "rest-bscms",
+  "version": "1.0.0",
+  "description": "Node RestFull API for Blood supply chain Management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "git+https://github.com/kelektiv/node.bcrypt.js.git#master",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.3.13",
+    "nodemailer": "^4.7.0",
+    "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.8"
+  }
+}

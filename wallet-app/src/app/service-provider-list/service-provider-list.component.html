@@ -1,0 +1,51 @@
+
+<header class="header">
+
+  <nav class="navbar">
+
+<div>
+    <img src="./../../assets/img/Logo.PNG" width="280px" height="90px" (click) ="routeToHome()"> </div>
+   <ul class="nav__links">
+    <!-- <li><a (click)="HomePageUser()" class="nav__child_link"></a></li> -->
+        <li><a><span (click)="UserBookings()" class="nav__child_link"> My Bookings</span></a></li>
+    <li> <a><span  (click)="SearchLocation()" class="nav__child_link">Search By Location</span></a>
+    </li>
+    <li> <a><span (click)="SearchForService()" class="nav__child_link">Search for Service</span></a>
+    </li>
+    <li> <a ><span (click)="LogOut()" class="nav__child_link">Logout</span></a></li>
+</ul>
+  </nav>
+</header>
+
+<div class="service-title">  {{profession}}s near you</div><br>
+
+<div class="service-list">
+<br>
+<div class="service-box" *ngFor="let s of serviceproviders">
+
+  <div class="serviceman-name"> {{s.firstname}} {{s.lastname}} </div><br>
+  <button  class="btn btn-warning" (click) = "showformtrigger(s)"> send request</button>
+    <div>{{s.profession}}</div>
+    <div> {{s.email}} </div>
+
+</div><br>
+</div>
+
+<div class="outerbox" *ngIf="showform">
+  <div>
+    <h2> Request a Service</h2>
+    <form >
+      <div class="form-group">
+        <label for="name">Service Provider :  <h3>{{testuser.firstname}}</h3></label><br>
+        <label for="description">Description</label>
+        <input type="text"  class="form-control" name="description" [(ngModel)]="description">
+        <label for="budget">Budget</label>
+        <input type="number"  class="form-control" name="budget" [(ngModel)]="budget">
+        <label for="deadline">Need By</label>
+        <input type="date"  class="form-control" name="deadline" [(ngModel)]="deadline">
+      </div>
+      <button type="button" class="btn btn-default" (click)=" newServicerequests()">Send Request</button><br>
+      <button type="button" class="btn btn-default" (click)="showformtrigger()"> Cancel</button>
+    </form>
+  </div>
+</div>

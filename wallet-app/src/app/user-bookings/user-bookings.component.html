@@ -1,0 +1,52 @@
+<app-user-header></app-user-header>
+<div class="service-title"> Your Bookings</div><br>
+<!-- the following block displays the service requests which are in pending/accepted status -->
+<div class="service-title" *ngIf= "!servicerequests"> You have no Bookings yet  </div>
+<div class="service-box" *ngFor="let s of servicerequests">
+    <div class="service-request" *ngIf="s.status!=='Paid'">
+  <div class="serviceman-name"> {{s.servicemanname}} </div><br>
+  <!-- displays the PAY button only if the status of the request is marked complete by service provider -->
+  <button *ngIf="s.status==='Completed'" (click) ="paid(s._id)"> PAY </button> 
+  <div > </div>
+  <button (click)="pdfv(s)"> view Bill </button>
+    <div>Budget : {{s.budget}}</div>
+    <div> Service Requested :  {{s.description}} </div>
+    <div>Need By: {{s.deadline}}</div>
+    <div> Serviceprovider's Response : {{s.status}} </div>
+
+ </div>
+</div>
+<div class="service-title"> Previous Bookings</div><br>
+
+<!-- the following block displays the service requests which are in completed status -->
+<div class="service-box" *ngFor="let s of servicerequests">
+  <div *ngIf =""></div>
+<div *ngIf="s.status==='Paid'" class="service-request" >
+    <div class="serviceman-name" > {{s.servicemanname}} </div><br>
+      <button> Rate {{s.servicemanname}} </button>
+      <div>Budget : {{s.budget}}</div>
+      <div> Service Requested :  {{s.description}} </div>
+      <div>Need By: {{s.deadline}}</div>
+      <div> Status : {{s.status}} </div>
+
+    </div>
+  </div>
+
+  <!-- pdf  print template -->
+<div id="results" *ngIf="test" class="outputt">
+    <p id="bstatement">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Billing statement</p><p class="insideloop">
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Customer Name:{{pdff.username}}
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Budget:$ {{pdff.budget}}
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Service Provided by :{{pdff.servicemanname}}
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Service Deadline : {{pdff.deadline}}
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Service Description:{{pdff.description}}</p><br>
+    <button (click)="printt()" class="print_button"> Print </button>
+    </div>
+ 
+

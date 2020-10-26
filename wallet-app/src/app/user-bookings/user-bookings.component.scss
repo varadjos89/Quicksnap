@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+
+.navbar{
+background-color:black;
+}
+.nav__links{
+
+
+  flex:1 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+.nav__child_link{
+  background: transparent;
+  color:white;
+  flex:1 0 100px;
+}
+
+@media screen and (min-width:768px){
+  .navbar{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ .nav__child_link:hover{
+    padding-left: 1rem;
+    color: grey;
+  }
+
+}
+
+
+//  styling the service request listing content
+
+// .service-list{
+//   margin: 0 auto;
+//   width: 80%;
+//   // background-color: orange;
+//   height: auto;
+
+//   }
+
+  .service-request{
+    background-color: white;
+    margin: 0 auto;
+  width: 80%;
+  height: auto;
+  border: 5px solid orange;
+  padding :20px;
+  }
+  .service-box{
+    margin: 0 auto;
+    width: 90%;
+    background-color: white;
+  // border: 5px solid orange;
+    padding :20px;
+    position: relative;
+    }
+
+    .service-box div{
+      font-weight: 900;
+      display: block;
+    }
+    .service-box button{
+      float: right;
+      height: 40px;
+      width: 150px;
+      background-color: orange;
+      // font-size: 20px;
+      font-weight: 400;
+
+    }
+    .serviceman-name{
+      font-weight: 900;
+      font-size: 24px;
+      color: orange;
+    }
+
+    .service-title{
+      text-align: center;
+
+      font-size: 23px;
+      font-weight: 900;
+
+     }
+     .services__single-service:hover{
+
+       box-shadow: 10px 10px 15px 20px white;
+      }
+
+     .services__single-service-text{
+       width: 100%;
+       line-height: 1.5;
+
+     }
+.outputt{
+  // display:block;
+  // margin:0 auto;
+  width:700px;
+  height: 400px;
+  position: absolute;
+  top :300px;
+  left:400px;
+  z-index: 50;
+  box-shadow: 5px 10px #888888;
+  background-color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid black;
+}
+.print_button{
+  display:block;
+  margin:0 auto;
+  width:100px;
+  height:35px;
+}
+.maindiv{
+  z-index:20;
+}
+#bstatement{
+  font-style: italic;
+  font-size: 32px;
+}
+.insideloop{
+  font-style: bold;
+  font-size: 22px;
+}

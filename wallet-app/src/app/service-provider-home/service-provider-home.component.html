@@ -1,0 +1,39 @@
+<app-service-provider-header></app-service-provider-header>
+
+<div class="service-title"> Welcome {{serviceprovider.firstname}}!<br>  </div>
+
+<br>
+<!-- this block populates the list of servicerequests which are in pending status -->
+<div   class="service-title" *ngIf= "requests===undefined"> You have no Requests yet  </div>
+<!-- <div class="listcontainer shadow-lg p-3 mb-5 bg-orange rounded"> -->
+  <div *ngFor="let r of requests " class="service-box">
+   <div class="service-request" *ngIf="r.status==='pending'">
+       <button  (click)="declineStatus(r._id)"> &nbsp; Decline&nbsp; </button>
+       <button (click)="acceptStatus(r._id)"> &nbsp; Accept &nbsp; </button>
+        <div class="serviceman-name"> {{r.username}} </div><br>
+ 
+      <div > Description : {{r.description}}</div>
+      <div >Budget : {{r.budget}}</div>
+      <div > Need by : {{r.deadline}}</div>
+      <div > Status : {{r.status}}</div>
+    </div>
+  </div>
+
+<!-- </div> -->
+
+
+<!-- this block populates the list of servicerequests which are in accepted/declined/completed status -->
+<div class="service-title"> Accepted Requests </div> <br>
+<!-- <div class="listcontainer shadow-lg p-3 mb-5 bg-orange rounded "> -->
+  <div *ngFor="let r of requests " class="service-box">
+      <div class="service-request" *ngIf="r.status==='Accepted' || r.status==='Completed' || r.status==='Paid'">
+      <div class="serviceman-name"> {{r.username}} </div><br>
+      <div > Description : {{r.description}}</div>
+      <button (click)="markCompleted(r._id)"> &nbsp; Mark as Completed &nbsp; </button>
+      <div >Budget : {{r.budget}}</div>
+      <div > Need by : {{r.deadline}}</div>
+      <div > Status : {{r.status}}</div>
+    </div>
+  <!-- </ng-container> -->
+</div>
+

@@ -1,0 +1,167 @@
+.bg-img{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../src/assets/service-home-background.jpg);
+}
+
+.service-request{
+  background-color: white;
+  margin: 0 auto;
+width: 80%;
+height: auto;
+border: 5px solid orange;
+padding :20px;
+}
+.service-box{
+  margin: 0 auto;
+  width: 90%;
+  background-color: white;
+// border: 5px solid orange;
+  padding :20px;
+  position: relative;
+  }
+
+  .service-box div{
+    font-weight: 900;
+    display: block;
+  }
+  .service-box button{
+    float: right;
+    height: 40px;
+    width: 150px;
+    background-color: orange;
+    // font-size: 20px;
+    font-weight: 400;
+
+  }
+  .serviceman-name{
+    font-weight: 900;
+    font-size: 24px;
+    color: orange;
+  }
+
+  .service-title{
+    text-align: center;
+
+    font-size: 23px;
+    font-weight: 900;
+
+   }
+   .services__single-service:hover{
+
+     box-shadow: 10px 10px 15px 20px white;
+    }
+
+   .services__single-service-text{
+     width: 100%;
+     line-height: 1.5;
+
+   }
+.taskbox{
+    width: 600px;
+    // height:400px;
+    // border : 1px solid rgb(116, 113, 113);
+  position: absolute;
+  top : 500px;
+  right:100px;
+    margin-left: 40px;
+    overflow:auto;
+    max-height: 600px;
+}
+
+.card{
+    width : 600px !important;
+    position: absolute;
+    top: 900px;
+    left: 440px;
+    z-index: 10;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+
+.navbar{
+background-color:black;
+}
+.nav__links{
+
+
+  flex:1 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+.nav__child_link{
+  background: transparent;
+  color:white;
+  flex:1 0 100px;
+}
+
+@media screen and (min-width:768px){
+  .navbar{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ .nav__child_link:hover{
+    padding-left: 1rem;
+    color: grey;
+  }
+
+}
+
+// End of nav bar
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+
+.navbar{
+background-color:black;
+}
+.nav__links{
+
+  flex:1 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+.nav__child_link{
+  background: transparent;
+  color:white;
+  flex:1 0 100px;
+}
+
+@media screen and (min-width:768px){
+  .navbar{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ .nav__child_link:hover{
+    padding-left: 1rem;
+    color: grey;
+  }
+
+}
+
+
+.service-title{
+  text-align: center;
+ 
+  font-size: 23px;
+  font-weight: 900;
+ 
+ }

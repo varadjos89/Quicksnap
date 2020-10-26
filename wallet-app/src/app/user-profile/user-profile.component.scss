@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i");
+body{
+  background-image: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.navbar {
+  background-color: black;
+  opacity:0.7;
+}
+.nav__links {
+  flex: 1 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+.nav__child_link {
+  background: transparent;
+  color: white;
+  flex: 1 0 100px;
+}
+.marginTop{
+  margin-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav__child_link:hover {
+    padding-left: 1rem;
+    color: grey;
+  }
+}
+

@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row col-lg-6 col-lg-offset-3">
+        <div class="card">
+            <div class="alert alert-danger" role="alert" *ngIf="showErrorMessage">
+                {{errorMsg}}
+            </div>
+            <h2>Login</h2>
+            <div class="card-body">
+                <div class="well">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" [(ngModel)]="email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" [(ngModel)]="password" class="form-control" />
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" (click)="login()">Login</button>
+                        <button (click)="routeToUserRegisterPage()" class="btn btn-success">Register</button>
+                        <button (click)="routeToServiceProviderLogin()" class="btn btn-warning">Login as Service
+                            Provider</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+<!-- The contact form that gets displayed that the user has to give details to send an email  -->
+<form class="formmm">
+    <div class="form-group">
+         <label>Your Email Id:</label>
+         <input type="text" id="to" name="emaill" [(ngModel)]="emaill" class="form-control">
+       </div>
+     <div class="form-group">
+         <label>Subject:</label>
+         <input type="text" id="suject" name="msg" [(ngModel)]="msg" class="form-control">
+       </div>
+       <div class="form-group">
+         <label>Body:</label>
+         <input type="text" id="body" name="body" [(ngModel)]="bodymsg" class="form-control">
+       </div>
+       <div class="card-footer">
+           <button class="button" (click)="sendEmaill()" routerLinkActive="router-link-active" id="btnSave" class="btn btn-primary">Submit</button>
+
+
+   <button class="button" (click)="Homepage()"   routerLinkActive="router-link-active" id="btnSave" class="btn btn-primary">Home Page</button>
+
+
+
+

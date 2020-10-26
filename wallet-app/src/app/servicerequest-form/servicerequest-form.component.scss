@@ -1,0 +1,38 @@
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+.container{
+  width : 600px;
+  height: 600px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.outerbox{
+  width : 600px;
+  height: 600px;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  background-color: orange;
+  border-radius: 15px;
+}
+h1{
+  text-align: center;
+  padding:15px;
+}
+.outerbox div{
+  margin: 15px;
+}
+.outerbox input{
+  margin: 15px;
+  // overflow: scroll;
+}
+.outerbox label{
+  margin: 15px;
+}
+.outerbox button{
+margin: 0 auto;
+margin-left: 220px;
+background-color: white;
+color: orange;
+font-weight: 900;
+}

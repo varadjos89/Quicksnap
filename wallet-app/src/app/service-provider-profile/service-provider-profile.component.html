@@ -1,0 +1,80 @@
+<app-service-provider-header></app-service-provider-header>
+
+<div class="container">
+    <div class="row col-lg-8 col-lg-offset-2">
+      <div class="card">
+        <h2>Service Provider Profile</h2>
+        <div class="alert alert-success" role="alert" *ngIf="showAlert">
+          User updated Successfully
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="showError">
+          {{errorMsg}}
+        </div>
+        <div class="card-body">
+          <div class="well">
+            <div class=form-group>
+              <label>First Name</label>
+              <input type="text" id="fname" name="firstname" [(ngModel)]="firstname" required class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" id="lname" name="lastname" [(ngModel)]="lastname" required class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="email" name="email" [(ngModel)]="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="text" id="phone" name="phone" [(ngModel)]="phone" required maxlength="10" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Profession</label>
+              <select [(ngModel)]="profession" type="text" class="form-control" disabled>
+                <option>Carpenter</option>
+                <option>Electrician</option>
+                <option>Plumber</option>
+                <option>Interiors</option>
+                <option>Kitchen Renovation</option>
+                <option>Furniture Works</option>
+                <option>Bridal Makeup</option>
+                <option>Wedding Photographers</option>
+                <option>Event Organisers</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Address</label>
+              <input type="text" id="address" name="address" [(ngModel)]="address" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>City</label>
+              <select [(ngModel)]="city" type="text" class="form-control">
+                <option>New York</option>
+                <option>New Jersey</option>
+                <option>Boston</option>
+                <option>Las Vegas</option>
+                <option>Colorado</option>
+                <option>Orlando</option>
+                <option>Chicago</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>ZipCode</label>
+              <input type="text" id="zipcode" name="zipcode" [(ngModel)]="zipcode" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control">
+            </div>
+            <div class="card-footer">
+                <button class="button" (click)="updateUser()" routerLinkActive="router-link-active" id="btnSave"
+                  class="btn btn-primary">Update</button>
+                  <button class="button" (click)="routeToHomePage()" 
+                  class="btn btn-primary">Cancel</button>
+              </div>
+          </div>      
+        </div>
+      </div>
+    </div>
+  </div>
+  
