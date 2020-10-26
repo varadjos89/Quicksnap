@@ -22,12 +22,11 @@ QuickSnap is a marketplace for local services. It helps customers hire trusted p
 - You can mark a Service Request as completed
 
 ## How to install QuickSnap ?
-1. Download the contents of the repository https://github.com/neu-mis-info6150-spring-2019/final-project-meancoders
-2. In your terminal, Navigate to the folder `NewAPI`
-3. Run command - `npm run start`
-4. Open a new terminal, Navigate to the folder `wallet-app`
-5. Run command - `ng serve -o`
-6. You are all set! Login/Register as a Customer/Service Provider!
+1. In your terminal, Navigate to the folder `NewAPI`
+2. Run command - `npm run start`
+3. Open a new terminal, Navigate to the folder `wallet-app`
+4. Run command - `ng serve -o`
+5. You are all set! Login/Register as a Customer/Service Provider!
 
 ## Technologies used 
 - Angular 7
@@ -37,5 +36,10 @@ QuickSnap is a marketplace for local services. It helps customers hire trusted p
 - MongoDB
 - HTML5
 - SASS
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/48415852/97131945-d335b400-171b-11eb-83d0-bb98a2b2be57.png)
+
 
 
