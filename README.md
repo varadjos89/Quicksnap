@@ -38,41 +38,41 @@ QuickSnap is a marketplace for local services. It helps customers hire trusted p
 - SASS
 
 ## Screenshots
-1. User Login Page
+User Login Page
 ![image](https://user-images.githubusercontent.com/48415852/97131945-d335b400-171b-11eb-83d0-bb98a2b2be57.png)
 
-2. User Registration Page
+User Registration Page
 ![image](https://user-images.githubusercontent.com/48415852/97132419-44c23200-171d-11eb-8940-90a40f32bec4.png)
 
-3. User can login with credentials
+User can login with credentials
 ![image](https://user-images.githubusercontent.com/48415852/97132861-856e7b00-171e-11eb-9357-4c7d87735a28.png)
 
-4. User Dashboard where they can find service providers for 9 types of services based on their location ( 7 cities )
+User Dashboard where they can find service providers for 9 types of services based on their location ( 7 cities )
 ![image](https://user-images.githubusercontent.com/48415852/97132946-b5b61980-171e-11eb-97cb-d2d566a6b846.png)
 
 ![image](https://user-images.githubusercontent.com/48415852/97133025-03cb1d00-171f-11eb-86ed-ff53007fd065.png)
 
-5. User can select a service provider and send a service request describing the type of service needed, budget and deadline.
+User can select a service provider and send a service request describing the type of service needed, budget and deadline.
 ![image](https://user-images.githubusercontent.com/48415852/97133216-94a1f880-171f-11eb-9696-17f23fe3e414.png)
 
 ![image](https://user-images.githubusercontent.com/48415852/97133335-12fe9a80-1720-11eb-8e38-9bf49f01ae49.png)
 
-6. User can track the status of their request
+User can track the status of their request
 ![image](https://user-images.githubusercontent.com/48415852/97133458-87d1d480-1720-11eb-9b9d-9aee8fa9a26c.png)
 
-7. Service Providers can register and login with credentials
+Service Providers can register and login with credentials
 ![image](https://user-images.githubusercontent.com/48415852/97133965-0b3ff580-1722-11eb-8d1d-6c7f3e7a5a12.png)
 
-8. Service Providers can Accept/ Decline a service request from their dashboard
+Service Providers can Accept/ Decline a service request from their dashboard
 ![image](https://user-images.githubusercontent.com/48415852/97133536-c6678f00-1720-11eb-9acf-b401ee3deadc.png)
 
-9. Service Providers can mark the request as completed once they finish providing their service
+Service Providers can mark the request as completed once they finish providing their service
 ![image](https://user-images.githubusercontent.com/48415852/97133599-f1ea7980-1720-11eb-988e-a7852953aaa7.png)
 
-10. User can now pay for a service on completion and download a PDF copy of the billing statement
+User can now pay for a service on completion and download a PDF copy of the billing statement
 ![image](https://user-images.githubusercontent.com/48415852/97133743-60c7d280-1721-11eb-9d66-b060170fab37.png)
 
-11. User can rate serivce provider for their service
+User can rate serivce provider for their service
 ![image](https://user-images.githubusercontent.com/48415852/97133828-9b316f80-1721-11eb-8a8c-975b7d674715.png)
 
 
